@@ -1,0 +1,6 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "dba09c0b12bd776bb13bb608b72e6759"
+build_time: [518170365, 287633000]
+inputs:
+  "/Users/rodrigo.s.mulkey/Desktop/Interview/DateCalc/DateCalc/DateCalc/AppDelegate.swift": [518170362, 0]
+  "/Users/rodrigo.s.mulkey/Desktop/Interview/DateCalc/DateCalc/DateCalc/ViewController.swift": [518170362, 0]
