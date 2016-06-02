@@ -6,78 +6,191 @@ provides-nominal:
 provides-member:
 - ["C8DateCalc14ViewController", ""]
 provides-dynamic-lookup:
+- "initialDate"
 - "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "dayStringFromTime"
+- "timeStringFromUnixTime"
 depends-top-level:
+- "Double"
+- "NSDate"
+- !private "dateFormatter"
+- !private "NSLocale"
 - "UIViewController"
+- "String"
 - "ViewController"
 depends-member:
+- ["PSs9AnyObject", "NSDate"]
+- !private ["PSs9AnyObject", "NSLocale"]
+- !private ["PSs9AnyObject", "dateFormatter"]
+- ["PSs9AnyObject", "dayStringFromTime"]
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
-- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "initialDate"]
+- ["PSs9AnyObject", "timeStringFromUnixTime"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", ""]
+- ["PSs11CVarArgType", "NSDate"]
+- !private ["PSs11CVarArgType", "NSLocale"]
+- !private ["PSs11CVarArgType", "dateFormatter"]
+- ["PSs11CVarArgType", "dayStringFromTime"]
 - ["PSs11CVarArgType", "didReceiveMemoryWarning"]
-- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "initialDate"]
+- ["PSs11CVarArgType", "timeStringFromUnixTime"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", ""]
+- ["PSs23CustomStringConvertible", "NSDate"]
+- !private ["PSs23CustomStringConvertible", "NSLocale"]
+- !private ["PSs23CustomStringConvertible", "dateFormatter"]
+- ["PSs23CustomStringConvertible", "dayStringFromTime"]
 - ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
-- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "initialDate"]
+- ["PSs23CustomStringConvertible", "timeStringFromUnixTime"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", ""]
+- ["PSs9Equatable", "NSDate"]
+- !private ["PSs9Equatable", "NSLocale"]
+- !private ["PSs9Equatable", "dateFormatter"]
+- ["PSs9Equatable", "dayStringFromTime"]
 - ["PSs9Equatable", "didReceiveMemoryWarning"]
-- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "initialDate"]
+- ["PSs9Equatable", "timeStringFromUnixTime"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", ""]
+- ["PSs8Hashable", "NSDate"]
+- !private ["PSs8Hashable", "NSLocale"]
+- !private ["PSs8Hashable", "dateFormatter"]
+- ["PSs8Hashable", "dayStringFromTime"]
 - ["PSs8Hashable", "didReceiveMemoryWarning"]
-- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "initialDate"]
+- ["PSs8Hashable", "timeStringFromUnixTime"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", ""]
+- ["PSo8NSCoding", "NSDate"]
+- !private ["PSo8NSCoding", "NSLocale"]
+- !private ["PSo8NSCoding", "dateFormatter"]
+- ["PSo8NSCoding", "dayStringFromTime"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
-- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "initialDate"]
+- ["PSo8NSCoding", "timeStringFromUnixTime"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- !private ["CSo6NSDate", "init"]
+- ["PSo26NSExtensionRequestHandling", "NSDate"]
+- !private ["PSo26NSExtensionRequestHandling", "NSLocale"]
+- !private ["PSo26NSExtensionRequestHandling", "dateFormatter"]
+- ["PSo26NSExtensionRequestHandling", "dayStringFromTime"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
-- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "initialDate"]
+- ["PSo26NSExtensionRequestHandling", "timeStringFromUnixTime"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "Double"]
+- ["CSo8NSObject", "NSDate"]
+- !private ["CSo8NSObject", "NSLocale"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "dateFormatter"]
+- ["CSo8NSObject", "dayStringFromTime"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
-- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "initialDate"]
+- ["CSo8NSObject", "timeStringFromUnixTime"]
 - ["CSo8NSObject", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "NSDate"]
+- !private ["PSo16NSObjectProtocol", "NSLocale"]
+- !private ["PSo16NSObjectProtocol", "dateFormatter"]
+- ["PSo16NSObjectProtocol", "dayStringFromTime"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
-- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "initialDate"]
+- ["PSo16NSObjectProtocol", "timeStringFromUnixTime"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- ["PSo21UIAppearanceContainer", "NSDate"]
+- !private ["PSo21UIAppearanceContainer", "NSLocale"]
+- !private ["PSo21UIAppearanceContainer", "dateFormatter"]
+- ["PSo21UIAppearanceContainer", "dayStringFromTime"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
-- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "initialDate"]
+- ["PSo21UIAppearanceContainer", "timeStringFromUnixTime"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "NSDate"]
+- !private ["PSo18UIContentContainer", "NSLocale"]
+- !private ["PSo18UIContentContainer", "dateFormatter"]
+- ["PSo18UIContentContainer", "dayStringFromTime"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
-- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "initialDate"]
+- ["PSo18UIContentContainer", "timeStringFromUnixTime"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
+- ["PSo18UIFocusEnvironment", "NSDate"]
+- !private ["PSo18UIFocusEnvironment", "NSLocale"]
+- !private ["PSo18UIFocusEnvironment", "dateFormatter"]
+- ["PSo18UIFocusEnvironment", "dayStringFromTime"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
-- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "initialDate"]
+- ["PSo18UIFocusEnvironment", "timeStringFromUnixTime"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
+- ["CSo11UIResponder", "Double"]
+- ["CSo11UIResponder", "NSDate"]
+- !private ["CSo11UIResponder", "NSLocale"]
+- ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "dateFormatter"]
+- ["CSo11UIResponder", "dayStringFromTime"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
-- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "initialDate"]
+- ["CSo11UIResponder", "timeStringFromUnixTime"]
 - ["CSo11UIResponder", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "NSDate"]
+- !private ["PSo16UIStateRestoring", "NSLocale"]
+- !private ["PSo16UIStateRestoring", "dateFormatter"]
+- ["PSo16UIStateRestoring", "dayStringFromTime"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
-- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "initialDate"]
+- ["PSo16UIStateRestoring", "timeStringFromUnixTime"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
+- ["PSo18UITraitEnvironment", "NSDate"]
+- !private ["PSo18UITraitEnvironment", "NSLocale"]
+- !private ["PSo18UITraitEnvironment", "dateFormatter"]
+- ["PSo18UITraitEnvironment", "dayStringFromTime"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
-- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "initialDate"]
+- ["PSo18UITraitEnvironment", "timeStringFromUnixTime"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
+- ["CSo16UIViewController", "Double"]
+- ["CSo16UIViewController", "NSDate"]
+- !private ["CSo16UIViewController", "NSLocale"]
+- ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "dateFormatter"]
+- ["CSo16UIViewController", "dayStringFromTime"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
-- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "initialDate"]
+- ["CSo16UIViewController", "timeStringFromUnixTime"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
+- ["C8DateCalc14ViewController", "Double"]
+- ["C8DateCalc14ViewController", "NSDate"]
+- !private ["C8DateCalc14ViewController", "NSLocale"]
+- ["C8DateCalc14ViewController", "String"]
+- !private ["C8DateCalc14ViewController", "dateFormatter"]
+- ["C8DateCalc14ViewController", "dayStringFromTime"]
 - ["C8DateCalc14ViewController", "deinit"]
 - ["C8DateCalc14ViewController", "didReceiveMemoryWarning"]
-- ["C8DateCalc14ViewController", "init"]
+- ["C8DateCalc14ViewController", "initialDate"]
+- ["C8DateCalc14ViewController", "timeStringFromUnixTime"]
 - ["C8DateCalc14ViewController", "viewDidLoad"]
+- !private ["PSs12_Reflectable", "init"]
 depends-nominal:
 - "PSs9AnyObject"
 - "PSs11CVarArgType"
@@ -85,9 +198,12 @@ depends-nominal:
 - "PSs9Equatable"
 - "PSs8Hashable"
 - "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo6NSDate"
 - "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
 - "PSo21UIAppearanceContainer"
 - "PSo18UIContentContainer"
 - "PSo18UIFocusEnvironment"
@@ -96,6 +212,7 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - "CSo16UIViewController"
 - "C8DateCalc14ViewController"
+- !private "PSs12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -107,4 +224,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
-interface-hash: "2273e0b6560749631899e82af2412a52"
+interface-hash: "753c38a87aa0df2ddf982edd730c87c9"
