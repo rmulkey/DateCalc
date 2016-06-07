@@ -6,33 +6,33 @@ provides-nominal:
 provides-member:
 - ["C8DateCalc14ViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
 - "endDatePicker"
-- "daysBetweenDates"
-- "timeInterval"
 - "calculateButtonTapped"
+- "timeInterval"
 - "endDatePickerAction"
-- "endDate"
-- "startDatePicker"
-- "startDatePickerAction"
-- "viewDidLoad"
-- "resultLabel"
 - "startDate"
+- "daysBetweenDates"
+- "didReceiveMemoryWarning"
+- "startDatePicker"
+- "viewDidLoad"
+- "startDatePickerAction"
+- "resultLabel"
+- "endDate"
 depends-top-level:
 - !private "StringLiteralType"
-- !private "NSCalendarOptions"
 - !private "NSCalendar"
-- !private "NSDateFormatter"
+- "AnyObject"
+- "ViewController"
+- !private "NSCalendarOptions"
 - !private "Array"
 - "UIDatePicker"
 - !private "print"
-- "ViewController"
+- !private "NSDateFormatter"
 - "UILabel"
 - "NSDate"
-- "AnyObject"
-- !private "NSCalendarUnit"
-- !private "+"
 - "UIViewController"
+- !private "+"
+- !private "NSCalendarUnit"
 depends-member:
 - !private ["PSs9AnyObject", "NSCalendar"]
 - !private ["PSs9AnyObject", "NSCalendarOptions"]
@@ -66,7 +66,11 @@ depends-member:
 - !private ["PSs23ArrayLiteralConvertible", "Day"]
 - !private ["PSs23ArrayLiteralConvertible", "Element"]
 - !private ["PSs23ArrayLiteralConvertible", "WrapComponents"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
 - !private ["Sb", "deinit"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
 - !private ["PSs11CVarArgType", "NSCalendar"]
 - !private ["PSs11CVarArgType", "NSCalendarOptions"]
 - !private ["PSs11CVarArgType", "NSCalendarUnit"]
@@ -97,8 +101,10 @@ depends-member:
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", ""]
 - !private ["VSs9Character", "deinit"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
 - !private ["PSs10Comparable", "init"]
 - !private ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["PSs23CustomStringConvertible", "NSCalendar"]
 - !private ["PSs23CustomStringConvertible", "NSCalendarOptions"]
 - !private ["PSs23CustomStringConvertible", "NSCalendarUnit"]
@@ -131,6 +137,7 @@ depends-member:
 - !private ["Sd", "deinit"]
 - !private ["PSs9Equatable", "Day"]
 - !private ["PSs9Equatable", "Element"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
 - !private ["PSs9Equatable", "NSCalendar"]
 - !private ["PSs9Equatable", "NSCalendarOptions"]
 - !private ["PSs9Equatable", "NSCalendarUnit"]
@@ -163,6 +170,9 @@ depends-member:
 - ["PSs9Equatable", ""]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Sf", "deinit"]
+- !private ["VSs7Float80", "deinit"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
 - !private ["PSs8Hashable", "NSCalendar"]
 - !private ["PSs8Hashable", "NSCalendarOptions"]
 - !private ["PSs8Hashable", "NSCalendarUnit"]
@@ -193,11 +203,16 @@ depends-member:
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", ""]
 - !private ["SQ", "deinit"]
+- !private ["Si", "IntegerLiteralType"]
 - !private ["Si", "deinit"]
 - !private ["VSs5Int16", "deinit"]
 - !private ["VSs5Int32", "deinit"]
 - !private ["VSs5Int64", "deinit"]
 - !private ["VSs4Int8", "deinit"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
 - !private ["PSs14MirrorPathType", "init"]
 - !private ["CSo10NSCalendar", "components"]
 - !private ["CSo10NSCalendar", "currentCalendar"]
@@ -344,13 +359,17 @@ depends-member:
 - !private ["PSs13OptionSetType", "WrapComponents"]
 - !private ["Sq", "deinit"]
 - !private ["PSs16OutputStreamType", "init"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
 - !private ["PSs16RawRepresentable", "Day"]
 - !private ["PSs16RawRepresentable", "Element"]
 - !private ["PSs16RawRepresentable", "WrapComponents"]
 - !private ["PSs14SetAlgebraType", "Day"]
 - !private ["PSs14SetAlgebraType", "Element"]
 - !private ["PSs14SetAlgebraType", "WrapComponents"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
 - !private ["PSs10Streamable", "init"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
 - !private ["SS", "init"]
 - !private ["PSs30StringInterpolationConvertible", "init"]
 - !private ["PSs24StringLiteralConvertible", "init"]
@@ -551,19 +570,31 @@ depends-member:
 - ["C8DateCalc14ViewController", "timeInterval"]
 - ["C8DateCalc14ViewController", "viewDidLoad"]
 - !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
 - !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
 - !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
 - !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
 - !private ["PSs12_Reflectable", "date"]
 - ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "text"]
 - ["PSs12_Reflectable", "timeIntervalSince1970"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
 depends-nominal:
 - "PSs9AnyObject"
 - !private "PSs23ArrayLiteralConvertible"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
 - !private "Sb"
+- !private "V12CoreGraphics7CGFloat"
 - "PSs11CVarArgType"
 - !private "VSs9Character"
 - !private "PSs10Comparable"
@@ -573,6 +604,8 @@ depends-nominal:
 - "PSs9Equatable"
 - !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
 - !private "Sf"
+- !private "VSs7Float80"
+- !private "PSs16ForwardIndexType"
 - "PSs8Hashable"
 - !private "SQ"
 - !private "Si"
@@ -580,6 +613,9 @@ depends-nominal:
 - !private "VSs5Int32"
 - !private "VSs5Int64"
 - !private "VSs4Int8"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
 - !private "PSs14MirrorPathType"
 - !private "CSo10NSCalendar"
 - !private "VSC17NSCalendarOptions"
@@ -599,9 +635,13 @@ depends-nominal:
 - !private "PSs13OptionSetType"
 - !private "Sq"
 - !private "PSs16OutputStreamType"
+- !private "PSs21RandomAccessIndexType"
 - !private "PSs16RawRepresentable"
 - !private "PSs14SetAlgebraType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
 - !private "PSs10Streamable"
+- !private "PSs10Strideable"
 - !private "SS"
 - !private "PSs30StringInterpolationConvertible"
 - !private "PSs24StringLiteralConvertible"
@@ -629,12 +669,19 @@ depends-nominal:
 - !private "PSs31UnicodeScalarLiteralConvertible"
 - "C8DateCalc14ViewController"
 - !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
 - !private "PSs32_BuiltinStringLiteralConvertible"
 - !private "PSs37_BuiltinUTF16StringLiteralConvertible"
 - !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "PSs16_CocoaStringType"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
 - !private "PSs21_ObjectiveCBridgeable"
+- !private "PSs22_RandomAccessAmbiguity"
 - "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"

@@ -14,6 +14,7 @@
 		0DFA14971D0021FA00E9D3DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DFA14961D0021FA00E9D3DB /* Assets.xcassets */; };
 		0DFA149A1D0021FA00E9D3DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DFA14981D0021FA00E9D3DB /* LaunchScreen.storyboard */; };
 		0DFA14A51D0021FA00E9D3DB /* DateCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA14A41D0021FA00E9D3DB /* DateCalcTests.swift */; };
+		0DFA14B11D074FC200E9D3DB /* Problem.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DFA14B01D074FC200E9D3DB /* Problem.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		0DFA14A01D0021FA00E9D3DB /* DateCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DFA14A41D0021FA00E9D3DB /* DateCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCalcTests.swift; sourceTree = "<group>"; };
 		0DFA14A61D0021FA00E9D3DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DFA14B01D074FC200E9D3DB /* Problem.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Problem.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				0DFA14961D0021FA00E9D3DB /* Assets.xcassets */,
 				0DFA14981D0021FA00E9D3DB /* LaunchScreen.storyboard */,
 				0DFA149B1D0021FA00E9D3DB /* Info.plist */,
+				0DFA14B01D074FC200E9D3DB /* Problem.txt */,
 				0DFA14931D0021FA00E9D3DB /* DateCalc.xcdatamodeld */,
 			);
 			path = DateCalc;
@@ -182,6 +185,7 @@
 			files = (
 				0DFA149A1D0021FA00E9D3DB /* LaunchScreen.storyboard in Resources */,
 				0DFA14971D0021FA00E9D3DB /* Assets.xcassets in Resources */,
+				0DFA14B11D074FC200E9D3DB /* Problem.txt in Resources */,
 				0DFA14921D0021FA00E9D3DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +394,7 @@
 				0DFA14AB1D0021FA00E9D3DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0DFA14AC1D0021FA00E9D3DB /* Build configuration list for PBXNativeTarget "DateCalcTests" */ = {
 			isa = XCConfigurationList;
@@ -398,6 +403,7 @@
 				0DFA14AE1D0021FA00E9D3DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

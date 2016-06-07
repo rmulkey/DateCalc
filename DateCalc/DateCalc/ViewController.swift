@@ -38,9 +38,13 @@ class ViewController: UIViewController {
         
         let calendar = NSCalendar.currentCalendar()
         
-        let adjustedStartDate = calendar.dateByAddingUnit(NSCalendarUnit.Day, value: -1, toDate: startDate, options: NSCalendarOptions.WrapComponents)
+        let adjustedStartDate = calendar.dateByAddingUnit(NSCalendarUnit.Day, value: +1, toDate: startDate, options: NSCalendarOptions.WrapComponents)
+        
+        print("Adjusted Start Date: " + "\(adjustedStartDate)")
         
         let adjustedEndDate = calendar.dateByAddingUnit(NSCalendarUnit.Day, value: -1, toDate: endDate, options: NSCalendarOptions.WrapComponents)
+        
+        print("Adjusted End Date: " + "\(adjustedEndDate)")
         
         let components = calendar.components([.Day], fromDate: adjustedStartDate!, toDate: adjustedEndDate!, options: NSCalendarOptions.WrapComponents)
         
