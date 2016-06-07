@@ -87,6 +87,7 @@ typedef int swift_int3  __attribute__((__ext_vector_type__(3)));
 typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -116,13 +117,26 @@ SWIFT_CLASS("_TtC8DateCalc11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSDate;
+@class UIDatePicker;
+@class UILabel;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC8DateCalc14ViewController")
 @interface ViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIDatePicker * __null_unspecified startDatePicker;
+@property (nonatomic, weak) IBOutlet UIDatePicker * __null_unspecified endDatePicker;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified resultLabel;
+@property (nonatomic, strong) NSDate * __nonnull startDate;
+@property (nonatomic, strong) NSDate * __nonnull endDate;
+@property (nonatomic, readonly) NSTimeInterval timeInterval;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (IBAction)calculateButtonTapped;
+- (void)daysBetweenDates:(NSDate * __nonnull)startDate endDate:(NSDate * __nonnull)endDate;
+- (IBAction)startDatePickerAction:(id __nonnull)sender;
+- (IBAction)endDatePickerAction:(id __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

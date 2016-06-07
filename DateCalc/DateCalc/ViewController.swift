@@ -10,17 +10,63 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var startDate = 0
-    var endDate = 0
+    @IBOutlet weak var startDatePicker: UIDatePicker!
+    @IBOutlet weak var endDatePicker: UIDatePicker!
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    var startDate = NSDate()
+    var endDate = NSDate()
+
+    let timeInterval = NSDate().timeIntervalSince1970
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func calculateButtonTapped () {
+
+        daysBetweenDates(startDatePicker.date, endDate: endDatePicker.date)
+    
+    }
+    
+    func daysBetweenDates(startDate: NSDate, endDate: NSDate) {
+        
+        let calendar = NSCalendar.currentCalendar()
+        
+        let adjustedStartDate = calendar.dateByAddingUnit(NSCalendarUnit.Day, value: -1, toDate: startDate, options: NSCalendarOptions.WrapComponents)
+        
+        let adjustedEndDate = calendar.dateByAddingUnit(NSCalendarUnit.Day, value: -1, toDate: endDate, options: NSCalendarOptions.WrapComponents)
+        
+        let components = calendar.components([.Day], fromDate: adjustedStartDate!, toDate: adjustedEndDate!, options: NSCalendarOptions.WrapComponents)
+        
+        print(components.day)
+        
+        resultLabel?.text = "\(components.day)"
+    }
+    
+    @IBAction func startDatePickerAction(sender: AnyObject) {
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "dd-MM-yyyy"
+        let strDate = dateFormatter.stringFromDate(startDatePicker.date)
+        
+        print("Start Date = " + strDate)
+        
+    }
+    
+    @IBAction func endDatePickerAction(sender: AnyObject) {
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "dd-MM-yyyy"
+        let strDate = dateFormatter.stringFromDate(endDatePicker.date)
+        
+        print("End Date = " + strDate)
+        
     }
     
 
