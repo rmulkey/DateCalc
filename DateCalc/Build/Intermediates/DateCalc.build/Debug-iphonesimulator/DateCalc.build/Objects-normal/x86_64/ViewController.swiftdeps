@@ -6,39 +6,39 @@ provides-nominal:
 provides-member:
 - ["C8DateCalc14ViewController", ""]
 provides-dynamic-lookup:
-- "endDatePicker"
-- "calculateButtonTapped"
-- "timeInterval"
 - "endDatePickerAction"
-- "startDate"
-- "daysBetweenDates"
+- "resultLabel"
 - "didReceiveMemoryWarning"
 - "startDatePicker"
+- "calculateButtonTapped"
+- "timeInterval"
 - "viewDidLoad"
 - "startDatePickerAction"
-- "resultLabel"
+- "startDate"
+- "daysBetweenDates"
+- "endDatePicker"
 - "endDate"
 depends-top-level:
-- !private "StringLiteralType"
-- !private "NSCalendar"
-- "AnyObject"
-- "ViewController"
-- !private "NSCalendarOptions"
 - !private "Array"
-- "UIDatePicker"
-- !private "print"
-- !private "NSDateFormatter"
-- "UILabel"
-- "NSDate"
 - "UIViewController"
-- !private "+"
+- "AnyObject"
+- !private "NSCalendar"
+- "UILabel"
+- !private "abs"
+- !private "NSDateFormatter"
+- "NSDate"
+- "UIDatePicker"
 - !private "NSCalendarUnit"
+- !private "+"
+- !private "print"
+- "ViewController"
+- !private "StringLiteralType"
 depends-member:
 - !private ["PSs9AnyObject", "NSCalendar"]
-- !private ["PSs9AnyObject", "NSCalendarOptions"]
 - !private ["PSs9AnyObject", "NSCalendarUnit"]
 - ["PSs9AnyObject", "NSDate"]
 - !private ["PSs9AnyObject", "NSDateFormatter"]
+- !private ["PSs9AnyObject", "abs"]
 - ["PSs9AnyObject", "calculateButtonTapped"]
 - !private ["PSs9AnyObject", "components"]
 - !private ["PSs9AnyObject", "currentCalendar"]
@@ -65,17 +65,16 @@ depends-member:
 - ["PSs9AnyObject", ""]
 - !private ["PSs23ArrayLiteralConvertible", "Day"]
 - !private ["PSs23ArrayLiteralConvertible", "Element"]
-- !private ["PSs23ArrayLiteralConvertible", "WrapComponents"]
 - !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
 - !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
 - !private ["Sb", "deinit"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["PSs11CVarArgType", "IntegerLiteralType"]
 - !private ["PSs11CVarArgType", "NSCalendar"]
-- !private ["PSs11CVarArgType", "NSCalendarOptions"]
 - !private ["PSs11CVarArgType", "NSCalendarUnit"]
 - ["PSs11CVarArgType", "NSDate"]
 - !private ["PSs11CVarArgType", "NSDateFormatter"]
+- !private ["PSs11CVarArgType", "abs"]
 - ["PSs11CVarArgType", "calculateButtonTapped"]
 - !private ["PSs11CVarArgType", "components"]
 - !private ["PSs11CVarArgType", "currentCalendar"]
@@ -106,10 +105,10 @@ depends-member:
 - !private ["PSs28CustomDebugStringConvertible", "init"]
 - !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["PSs23CustomStringConvertible", "NSCalendar"]
-- !private ["PSs23CustomStringConvertible", "NSCalendarOptions"]
 - !private ["PSs23CustomStringConvertible", "NSCalendarUnit"]
 - ["PSs23CustomStringConvertible", "NSDate"]
 - !private ["PSs23CustomStringConvertible", "NSDateFormatter"]
+- !private ["PSs23CustomStringConvertible", "abs"]
 - ["PSs23CustomStringConvertible", "calculateButtonTapped"]
 - !private ["PSs23CustomStringConvertible", "components"]
 - !private ["PSs23CustomStringConvertible", "currentCalendar"]
@@ -139,11 +138,10 @@ depends-member:
 - !private ["PSs9Equatable", "Element"]
 - !private ["PSs9Equatable", "IntegerLiteralType"]
 - !private ["PSs9Equatable", "NSCalendar"]
-- !private ["PSs9Equatable", "NSCalendarOptions"]
 - !private ["PSs9Equatable", "NSCalendarUnit"]
 - ["PSs9Equatable", "NSDate"]
 - !private ["PSs9Equatable", "NSDateFormatter"]
-- !private ["PSs9Equatable", "WrapComponents"]
+- !private ["PSs9Equatable", "abs"]
 - ["PSs9Equatable", "calculateButtonTapped"]
 - !private ["PSs9Equatable", "components"]
 - !private ["PSs9Equatable", "currentCalendar"]
@@ -174,10 +172,10 @@ depends-member:
 - !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
 - !private ["PSs8Hashable", "IntegerLiteralType"]
 - !private ["PSs8Hashable", "NSCalendar"]
-- !private ["PSs8Hashable", "NSCalendarOptions"]
 - !private ["PSs8Hashable", "NSCalendarUnit"]
 - ["PSs8Hashable", "NSDate"]
 - !private ["PSs8Hashable", "NSDateFormatter"]
+- !private ["PSs8Hashable", "abs"]
 - ["PSs8Hashable", "calculateButtonTapped"]
 - !private ["PSs8Hashable", "components"]
 - !private ["PSs8Hashable", "currentCalendar"]
@@ -217,14 +215,14 @@ depends-member:
 - !private ["CSo10NSCalendar", "components"]
 - !private ["CSo10NSCalendar", "currentCalendar"]
 - !private ["CSo10NSCalendar", "dateByAddingUnit"]
-- !private ["VSC17NSCalendarOptions", "WrapComponents"]
+- !private ["VSC17NSCalendarOptions", "Element"]
 - !private ["VSC14NSCalendarUnit", "Day"]
 - !private ["VSC14NSCalendarUnit", "Element"]
 - !private ["PSo8NSCoding", "NSCalendar"]
-- !private ["PSo8NSCoding", "NSCalendarOptions"]
 - !private ["PSo8NSCoding", "NSCalendarUnit"]
 - ["PSo8NSCoding", "NSDate"]
 - !private ["PSo8NSCoding", "NSDateFormatter"]
+- !private ["PSo8NSCoding", "abs"]
 - ["PSo8NSCoding", "calculateButtonTapped"]
 - !private ["PSo8NSCoding", "components"]
 - !private ["PSo8NSCoding", "currentCalendar"]
@@ -264,10 +262,10 @@ depends-member:
 - !private ["CSo15NSDateFormatter", "init"]
 - !private ["CSo15NSDateFormatter", "stringFromDate"]
 - !private ["PSo26NSExtensionRequestHandling", "NSCalendar"]
-- !private ["PSo26NSExtensionRequestHandling", "NSCalendarOptions"]
 - !private ["PSo26NSExtensionRequestHandling", "NSCalendarUnit"]
 - ["PSo26NSExtensionRequestHandling", "NSDate"]
 - !private ["PSo26NSExtensionRequestHandling", "NSDateFormatter"]
+- !private ["PSo26NSExtensionRequestHandling", "abs"]
 - ["PSo26NSExtensionRequestHandling", "calculateButtonTapped"]
 - ["PSo26NSExtensionRequestHandling", "daysBetweenDates"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
@@ -289,12 +287,12 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "AnyObject"]
 - !private ["CSo8NSObject", "NSCalendar"]
-- !private ["CSo8NSObject", "NSCalendarOptions"]
 - !private ["CSo8NSObject", "NSCalendarUnit"]
 - ["CSo8NSObject", "NSDate"]
 - !private ["CSo8NSObject", "NSDateFormatter"]
 - ["CSo8NSObject", "UIDatePicker"]
 - ["CSo8NSObject", "UILabel"]
+- !private ["CSo8NSObject", "abs"]
 - ["CSo8NSObject", "calculateButtonTapped"]
 - !private ["CSo8NSObject", "components"]
 - !private ["CSo8NSObject", "currentCalendar"]
@@ -319,10 +317,10 @@ depends-member:
 - ["CSo8NSObject", "timeIntervalSince1970"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "NSCalendar"]
-- !private ["PSo16NSObjectProtocol", "NSCalendarOptions"]
 - !private ["PSo16NSObjectProtocol", "NSCalendarUnit"]
 - ["PSo16NSObjectProtocol", "NSDate"]
 - !private ["PSo16NSObjectProtocol", "NSDateFormatter"]
+- !private ["PSo16NSObjectProtocol", "abs"]
 - ["PSo16NSObjectProtocol", "calculateButtonTapped"]
 - !private ["PSo16NSObjectProtocol", "components"]
 - !private ["PSo16NSObjectProtocol", "currentCalendar"]
@@ -356,16 +354,13 @@ depends-member:
 - !private ["CSo8NSString", "init"]
 - !private ["PSs13OptionSetType", "Day"]
 - !private ["PSs13OptionSetType", "Element"]
-- !private ["PSs13OptionSetType", "WrapComponents"]
 - !private ["Sq", "deinit"]
 - !private ["PSs16OutputStreamType", "init"]
 - !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
 - !private ["PSs16RawRepresentable", "Day"]
 - !private ["PSs16RawRepresentable", "Element"]
-- !private ["PSs16RawRepresentable", "WrapComponents"]
 - !private ["PSs14SetAlgebraType", "Day"]
 - !private ["PSs14SetAlgebraType", "Element"]
-- !private ["PSs14SetAlgebraType", "WrapComponents"]
 - !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
 - !private ["PSs16SignedNumberType", "IntegerLiteralType"]
 - !private ["PSs10Streamable", "init"]
@@ -378,10 +373,10 @@ depends-member:
 - !private ["PSo12UIAppearance", "date"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "NSCalendar"]
-- !private ["PSo21UIAppearanceContainer", "NSCalendarOptions"]
 - !private ["PSo21UIAppearanceContainer", "NSCalendarUnit"]
 - ["PSo21UIAppearanceContainer", "NSDate"]
 - !private ["PSo21UIAppearanceContainer", "NSDateFormatter"]
+- !private ["PSo21UIAppearanceContainer", "abs"]
 - ["PSo21UIAppearanceContainer", "calculateButtonTapped"]
 - !private ["PSo21UIAppearanceContainer", "date"]
 - ["PSo21UIAppearanceContainer", "daysBetweenDates"]
@@ -400,10 +395,10 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo18UIContentContainer", "NSCalendar"]
-- !private ["PSo18UIContentContainer", "NSCalendarOptions"]
 - !private ["PSo18UIContentContainer", "NSCalendarUnit"]
 - ["PSo18UIContentContainer", "NSDate"]
 - !private ["PSo18UIContentContainer", "NSDateFormatter"]
+- !private ["PSo18UIContentContainer", "abs"]
 - ["PSo18UIContentContainer", "calculateButtonTapped"]
 - ["PSo18UIContentContainer", "daysBetweenDates"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
@@ -426,10 +421,10 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "date"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "NSCalendar"]
-- !private ["PSo18UIFocusEnvironment", "NSCalendarOptions"]
 - !private ["PSo18UIFocusEnvironment", "NSCalendarUnit"]
 - ["PSo18UIFocusEnvironment", "NSDate"]
 - !private ["PSo18UIFocusEnvironment", "NSDateFormatter"]
+- !private ["PSo18UIFocusEnvironment", "abs"]
 - ["PSo18UIFocusEnvironment", "calculateButtonTapped"]
 - !private ["PSo18UIFocusEnvironment", "date"]
 - ["PSo18UIFocusEnvironment", "daysBetweenDates"]
@@ -450,12 +445,12 @@ depends-member:
 - !private ["CSo7UILabel", "text"]
 - ["CSo11UIResponder", "AnyObject"]
 - !private ["CSo11UIResponder", "NSCalendar"]
-- !private ["CSo11UIResponder", "NSCalendarOptions"]
 - !private ["CSo11UIResponder", "NSCalendarUnit"]
 - ["CSo11UIResponder", "NSDate"]
 - !private ["CSo11UIResponder", "NSDateFormatter"]
 - ["CSo11UIResponder", "UIDatePicker"]
 - ["CSo11UIResponder", "UILabel"]
+- !private ["CSo11UIResponder", "abs"]
 - ["CSo11UIResponder", "calculateButtonTapped"]
 - !private ["CSo11UIResponder", "date"]
 - ["CSo11UIResponder", "daysBetweenDates"]
@@ -473,10 +468,10 @@ depends-member:
 - ["CSo11UIResponder", "timeInterval"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo16UIStateRestoring", "NSCalendar"]
-- !private ["PSo16UIStateRestoring", "NSCalendarOptions"]
 - !private ["PSo16UIStateRestoring", "NSCalendarUnit"]
 - ["PSo16UIStateRestoring", "NSDate"]
 - !private ["PSo16UIStateRestoring", "NSDateFormatter"]
+- !private ["PSo16UIStateRestoring", "abs"]
 - ["PSo16UIStateRestoring", "calculateButtonTapped"]
 - ["PSo16UIStateRestoring", "daysBetweenDates"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
@@ -493,10 +488,10 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["PSo18UITraitEnvironment", "NSCalendar"]
-- !private ["PSo18UITraitEnvironment", "NSCalendarOptions"]
 - !private ["PSo18UITraitEnvironment", "NSCalendarUnit"]
 - ["PSo18UITraitEnvironment", "NSDate"]
 - !private ["PSo18UITraitEnvironment", "NSDateFormatter"]
+- !private ["PSo18UITraitEnvironment", "abs"]
 - ["PSo18UITraitEnvironment", "calculateButtonTapped"]
 - !private ["PSo18UITraitEnvironment", "date"]
 - ["PSo18UITraitEnvironment", "daysBetweenDates"]
@@ -518,12 +513,12 @@ depends-member:
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "AnyObject"]
 - !private ["CSo16UIViewController", "NSCalendar"]
-- !private ["CSo16UIViewController", "NSCalendarOptions"]
 - !private ["CSo16UIViewController", "NSCalendarUnit"]
 - ["CSo16UIViewController", "NSDate"]
 - !private ["CSo16UIViewController", "NSDateFormatter"]
 - ["CSo16UIViewController", "UIDatePicker"]
 - ["CSo16UIViewController", "UILabel"]
+- !private ["CSo16UIViewController", "abs"]
 - ["CSo16UIViewController", "calculateButtonTapped"]
 - ["CSo16UIViewController", "daysBetweenDates"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
@@ -548,12 +543,12 @@ depends-member:
 - !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
 - ["C8DateCalc14ViewController", "AnyObject"]
 - !private ["C8DateCalc14ViewController", "NSCalendar"]
-- !private ["C8DateCalc14ViewController", "NSCalendarOptions"]
 - !private ["C8DateCalc14ViewController", "NSCalendarUnit"]
 - ["C8DateCalc14ViewController", "NSDate"]
 - !private ["C8DateCalc14ViewController", "NSDateFormatter"]
 - ["C8DateCalc14ViewController", "UIDatePicker"]
 - ["C8DateCalc14ViewController", "UILabel"]
+- !private ["C8DateCalc14ViewController", "abs"]
 - ["C8DateCalc14ViewController", "calculateButtonTapped"]
 - ["C8DateCalc14ViewController", "daysBetweenDates"]
 - ["C8DateCalc14ViewController", "deinit"]
